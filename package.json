@@ -1,5 +1,8 @@
 {
   "private": true,
+  "engines": {
+    "node": "16"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,6 +11,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "types:check": "tsc --noEmit",
     "storybook:dev": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },

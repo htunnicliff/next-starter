@@ -1,10 +1,31 @@
 {
   "extends": ["next/core-web-vitals", "prettier"],
   "plugins": ["testing-library"],
+  "rules": {
+    "import/no-default-export": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "react",
+            "importNames": ["FC"],
+            "message": "Do not use React.FC"
+          }
+        ]
+      }
+    ]
+  },
   "overrides": [
     {
-      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"],
+      "files": ["**/?(*.)+spec.ts?(x)"],
       "extends": ["plugin:testing-library/react"]
+    },
+    {
+      "files": ["src/pages/**/*.tsx", "src/**/*.stories.tsx"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
     }
   ]
 }
