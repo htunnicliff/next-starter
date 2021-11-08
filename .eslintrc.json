@@ -22,7 +22,11 @@
       "extends": ["plugin:testing-library/react"]
     },
     {
-      "files": ["src/pages/**/*.tsx", "src/**/*.stories.tsx"],
+      "files": [
+        "src/pages/**/*.tsx",
+        "src/**/*.stories.tsx",
+        "next.config.mjs"
+      ],
       "rules": {
         "import/no-default-export": "off"
       }
