@@ -10,6 +10,7 @@
     "start": "next start",
     "test": "jest",
     "lint": "next lint --fix",
+    "lint:ci": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "types:check": "tsc --noEmit",
