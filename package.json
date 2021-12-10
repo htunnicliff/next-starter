@@ -1,8 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "node": "16.13.1"
-  },
   "volta": {
     "node": "16.13.1",
     "yarn": "1.22.17"
@@ -12,22 +9,13 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "types:check": "tsc --noEmit",
     "storybook:dev": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "prepare": "is-ci || husky install"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": "next lint",
-    "*.{css,yaml,md,json,js,ts,tsx}": "prettier --write"
-  },
-  "babel": {
-    "presets": [
-      "next/babel"
-    ]
   },
   "dependencies": {
     "next": "^12.0.7",
