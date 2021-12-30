@@ -5,6 +5,9 @@ const config: Config.InitialOptions = {
   setupFiles: ["./jest.pre-setup.ts"],
   setupFilesAfterEnv: ["./jest.setup.ts"],
   verbose: true,
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
 };
 
 export default config;

@@ -19,6 +19,7 @@
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.6",
     "next": "^12.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -26,11 +27,9 @@
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
-    "@next/env": "^12.0.7",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
-    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.4.9",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
@@ -41,7 +40,6 @@
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
-    "autoprefixer": "^10.3.6",
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.2",
     "eslint": "7",
@@ -53,11 +51,11 @@
     "is-ci": "^3.0.1",
     "jest": "^27.4.5",
     "lint-staged": "^12.1.4",
-    "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "storybook-addon-next-router": "^3.1.1",
     "tailwindcss": "^3.0.7",
-    "ts-node": "^10.2.1",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }

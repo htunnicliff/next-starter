@@ -1,6 +1,4 @@
 import { RouterContext } from "next/dist/shared/lib/router-context";
-import "tailwindcss/tailwind.css";
-import "inter-ui/inter.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

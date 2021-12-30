@@ -23,10 +23,11 @@
     },
     {
       "files": [
-        "src/pages/**/*.tsx",
+        "pages/**/*.{tsx,ts}",
+        "src/pages/**/*.{tsx,ts}",
         "src/**/*.stories.tsx",
-        "next.config.mjs",
-        "jest.config.ts"
+        "jest.config.ts",
+        "next.config.mjs"
       ],
       "rules": {
         "import/no-default-export": "off"
